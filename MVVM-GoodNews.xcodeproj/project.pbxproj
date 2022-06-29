@@ -17,6 +17,10 @@
 		7C3455A2286ACDCE00EAB9D1 /* MVVM_GoodNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455A1286ACDCE00EAB9D1 /* MVVM_GoodNewsUITests.swift */; };
 		7C3455A4286ACDCE00EAB9D1 /* MVVM_GoodNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455A3286ACDCE00EAB9D1 /* MVVM_GoodNewsUITestsLaunchTests.swift */; };
 		7C3455B2286ACE5F00EAB9D1 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455B1286ACE5F00EAB9D1 /* NewsListTableViewController.swift */; };
+		7C3455B5286B447C00EAB9D1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455B4286B447C00EAB9D1 /* Webservice.swift */; };
+		7C3455B8286B494D00EAB9D1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455B7286B494D00EAB9D1 /* Article.swift */; };
+		7C3455BB286B4B8D00EAB9D1 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455BA286B4B8D00EAB9D1 /* ArticleViewModel.swift */; };
+		7C3455BE286C1A7800EAB9D1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3455BD286C1A7700EAB9D1 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		7C3455A1286ACDCE00EAB9D1 /* MVVM_GoodNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_GoodNewsUITests.swift; sourceTree = "<group>"; };
 		7C3455A3286ACDCE00EAB9D1 /* MVVM_GoodNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_GoodNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7C3455B1286ACE5F00EAB9D1 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
+		7C3455B4286B447C00EAB9D1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		7C3455B7286B494D00EAB9D1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		7C3455BA286B4B8D00EAB9D1 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		7C3455BD286C1A7700EAB9D1 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 		7C34557C286ACDCA00EAB9D1 /* MVVM-GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				7C3455BC286B4E5900EAB9D1 /* Cells */,
+				7C3455B9286B4B7C00EAB9D1 /* View Models */,
+				7C3455B6286B493000EAB9D1 /* Models */,
+				7C3455B3286B446800EAB9D1 /* Services */,
 				7C3455B0286ACE4200EAB9D1 /* Controllers */,
 				7C34557D286ACDCA00EAB9D1 /* AppDelegate.swift */,
 				7C34557F286ACDCA00EAB9D1 /* SceneDelegate.swift */,
@@ -136,6 +148,38 @@
 				7C3455B1286ACE5F00EAB9D1 /* NewsListTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C3455B3286B446800EAB9D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C3455B4286B447C00EAB9D1 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C3455B6286B493000EAB9D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C3455B7286B494D00EAB9D1 /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C3455B9286B4B7C00EAB9D1 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C3455BA286B4B8D00EAB9D1 /* ArticleViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		7C3455BC286B4E5900EAB9D1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C3455BD286C1A7700EAB9D1 /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +315,11 @@
 			files = (
 				7C3455B2286ACE5F00EAB9D1 /* NewsListTableViewController.swift in Sources */,
 				7C345588286ACDCA00EAB9D1 /* MVVM_GoodNews.xcdatamodeld in Sources */,
+				7C3455B8286B494D00EAB9D1 /* Article.swift in Sources */,
 				7C34557E286ACDCA00EAB9D1 /* AppDelegate.swift in Sources */,
+				7C3455BE286C1A7800EAB9D1 /* ArticleTableViewCell.swift in Sources */,
+				7C3455B5286B447C00EAB9D1 /* Webservice.swift in Sources */,
+				7C3455BB286B4B8D00EAB9D1 /* ArticleViewModel.swift in Sources */,
 				7C345580286ACDCA00EAB9D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
